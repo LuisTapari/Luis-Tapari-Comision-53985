@@ -44,9 +44,8 @@
         <main>
             <h2 class="Titulo-principal">Cart</h2>
             <div class="contenedor-carrito">
-                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio<i class="bi bi-emoji-frown-fill"></i></p>
-                <div id="carrito-productos" class="carrito-productos disabled">
-                </div>
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown-fill"></i></p>
+                <div id="carrito-productos" class="carrito-productos disabled"></div>
                 <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
                         <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
@@ -56,10 +55,16 @@
                             <p>Total:</p>
                             <p id="total">$60</p>
                         </div>
-                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                        <div id="resumen-compra" class="resumen-compra disabled">
+                            <h3>Resumen de Compra</h3>
+                            <p id="fecha-entrega">Fecha estimada de entrega: <span></span></p>
+                            <p>Total: <span id="total-resumen"></span></p>
+                            <p>ID de Compra: <span id="id-compra"></span></p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora!</button>
                     </div>
                 </div>
-                <p id="carrito-comprado" class="carrito-comprado disabled">Gracias por tu compra!<i class="bi bi-emoji-laughing-fill"></i></p>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Gracias por tu Compra!</p>
             </div>
         </main>
     </div>
